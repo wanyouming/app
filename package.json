@@ -4,16 +4,15 @@
   "description": "A Node app with SQLite database, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
     "fastify": "^4.2.1",
     "handlebars": "^4.7.7",
     "sqlite": "^4.1.1",
-    "sqlite3": "^5.0.9",
-    "@fastify/view": "^7.0.0",
-    "@fastify/static": "^6.4.1",
-    "@fastify/formbody": "^7.0.1"
+    "sqlite3": "^5.0.9"
   },
   "engines": {
     "node": "14.x"
@@ -26,5 +25,9 @@
     "node",
     "glitch",
     "sqlite"
-  ]
+  ],
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.19"
+  }
 }
